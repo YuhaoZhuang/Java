@@ -1,0 +1,9 @@
+Actual file name has to be exactly the class name
+Call the public class at the start of the program 
+Public static vid main (Strinf {}args0
+{
+}
+System.out.println(“something”);
+/n new line
+/’ double quote
+/t tab 
