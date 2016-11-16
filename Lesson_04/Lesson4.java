@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class Lesson4
 
-{ 	static String i1;
+{ 	
+	static String i1;
 	static int p1;
 	static String i2;
 	static int p2;
@@ -9,8 +10,6 @@ public class Lesson4
 	static int p3;
 	static String i4;
 	static int p4;
-
-
 	public static void main (String[]args)
 	{
 		//user inputs (fix numbers)

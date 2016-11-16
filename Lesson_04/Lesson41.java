@@ -1,15 +1,13 @@
 import java.util.Scanner;
 public class Lesson41
-
-{ 	static String i1;
+{ 	
+	static String i1;
 	static String p1;
 	static String i2;
 	static String p2;
 	static String i3;
 	static String a;
 	static String b;
-
-
 	public static void main (String[]args)
 	{
 		//user inputs (fix numbers)
@@ -28,10 +26,6 @@ public class Lesson41
 		System.out.println("What is your subject?" );
 		b =k.nextLine(); 
 		
-		
-
-
-
 		//print receipt
 		System.out.println("**************************");
 		
@@ -39,7 +33,6 @@ public class Lesson41
 		print(i1,p1);
 		print(i2,b);
 
-		
 		System.out.println("****************************");
 	}
 	

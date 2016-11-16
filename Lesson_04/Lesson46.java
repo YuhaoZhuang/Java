@@ -27,7 +27,7 @@ public class Lesson46
 	}
 	public static void gg()
 	{
-		System.out.printf("The are of your cube with radius of " +a+ " is %.5f:" ,b );
+		System.out.printf("The are of your circle with radius of " +a+ " is %.5f:" ,b );
 
 	}
 	
