@@ -9,18 +9,20 @@ public class lesson5
 	public static void main (String[]args)
 	{
 		
-		int a = (int)(Math.random()*7)+1;
-		int b = (int)(Math.random()*7)+1;
+		a = (int)(Math.random()*7)+1;
+		b = (int)(Math.random()*7)+1;
+		System.out.println("You rolled" +a);
+		System.out.println("Compuer rolled"+ b);
 		print();
 	
 	}
 	
 	public static void print()
 	{
-		if(a>b)
-			System.out.println(a);
-		if(b<a)
-			System.out.println(b);
+		if(a > b)
+			System.out.println("The winner is you!");
+		if(b > a)
+			System.out.println("The winner is he compuer");
 					
 	}
 
