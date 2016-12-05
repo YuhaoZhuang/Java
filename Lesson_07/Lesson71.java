@@ -1,26 +1,27 @@
+import java.util.Scanner;
 public class Lesson71
-{
-	static int a = 1653;
-	static int b = 0;
-	static double c = 0;
 
+{
+	static int number;
+	static int digits = 0;
+	static int average = 0;
 	public static void main(String[]args)
 	{
-		avDigits();
-		
-		System.out.println("The average of the digits in " + a + " is " + c);
-		
+	   Scanner kb = new Scanner(System.in);
+	   System.out.println("Please enter your number: ");
+	   number = kb.nextInt();
+	   avDigits();
+	   System.out.println("The average of the digits in " + number + " is " + average);
 	}
 	public static void avDigits()
 	{
-		int num = a;
-		while (num > 0)
-		{
-			b += 1;
-			c += num % 10;
+		int num = number;
+		while( num > 0)
+		{ 
+	        digits ++;
+			average += num % 10;
 			num /= 10;
+			int average = number / digits;
 		}
-		
-		c /= b;
 	}
 }

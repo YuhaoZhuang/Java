@@ -1,18 +1,25 @@
-public class Lesson73
+import java.util.Scanner;
+
+public class Lesson73 
 {
-	static String sentence = "alex ate many apples at a train station!";
-	
+	static String sentence;
 	public static void main(String[]args)
 	{
-		bb();
+		Scanner kb = new Scanner(System.in);
+		System.out.println("Please enter your sentence.");
+		sentence = kb.nextLine();
 		
+		replace();
 		System.out.println(sentence);
+		
 	}
-	public static void bb()
+	
+	public static void replace()
 	{
-		while (sentence.indexOf("a") >= 0)
+		while(sentence.indexOf("a") >= 0)
 		{
-			sentence = sentence.substring(0,sentence.indexOf("a")) + "@" + sentence.substring(sentence.indexOf("a") + 1);
+			sentence = sentence.substring(0,sentence.indexOf("a")) + ("@") + sentence.substring(sentence.indexOf("a")+1);
 		}
+			
 	}
 }

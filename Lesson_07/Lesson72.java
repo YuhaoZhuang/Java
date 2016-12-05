@@ -1,24 +1,25 @@
+import java.util.Scanner;
 public class Lesson72
+
 {
-	static int c = 123456709;
-	static int a = 0;
-	
-	public static void main (String[]args)
+	static int number;
+	static int rev = 0;
+	public static void main(String[]args)
 	{
+		Scanner kb = new Scanner(System.in);
+		System.out.println("Please enter a number.");
+		number = kb.nextInt();
 		getReverse();
-		
-		System.out.println(c + " reversed is " + a);
+		System.out.println(number + " reversed is " + rev);
 	}
 	public static void getReverse()
 	{
-		int num = c;
-		
-		while (num > 0)
+		int num = number;
+		while(num > 0)
 		{
-			a *= 10;
-			a += num % 10;
+			rev *= 10;
+			rev += num % 10;
 			num /= 10;
 		}
 	}
-	
 }
