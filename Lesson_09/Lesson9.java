@@ -1,47 +1,40 @@
 import java.util.Scanner;
 
 public class Lesson9
-{
 
+
+{
+	static String worda;
 	public static void main(String[]args)
 	{
-		Scanner kb = new Scanner(System.in);
-		String[] words = new String[5];
+		Scanner keyboard = new Scanner(System.in);
+		String [] words = new String[5];
+		System.out.println( enter any random five words .");
 		
-		System.out.println("Enter a word");
-		words[0] = kb.next();
-		
-		System.out.println("Enter a word");
-		words[1] = kb.next();
-		
-		System.out.println("Eneter a word");
-		words[2] = kb.next();
-		
-		System.out.println("Enter a word");
-		words[3] = kb.next();
-		
-		System.out.println("Enter a word");
-		words[4] = kb.next();
-		
-		System.out.println("In Order:");
-		
-		for (String word : words)
+		for(int i = 0; i < words.length; i++)
 		{
-			System.out.println(word);
+			words[i] = keyboard.next();
 		}
 		
-		System.out.println("Reversed:");
+		System.out.println();
 		
+		System.out.print("In order : ");
+		for(String word : words)
+		{
+			System.out.print( " "+ word + " " );
+		}
+		System.out.println(" ");
+		
+		System.out.println();
+		
+		System.out.print("Reversed : ");
 		reverse(words);
-		
 	}
-	
-	public static void reverse(String[] array)
+	public static void reverse(String [] words)
 	{
-		for (int i = array.length - 1; i >= 0; i--)
+		for(int i = words.length; i > 0; i--)
 		{
-			System.out.println(array[i]);
+			System.out.print(" " +words[i-1] + " ");
 		}
 	}
-	
 }

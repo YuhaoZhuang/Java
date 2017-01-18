@@ -1,38 +1,27 @@
 import java.util.Scanner;
 
 public class Lesson91
-{
 
+{
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
 		String[] words = new String[5];
+		System.out.println( enter 5 words.");
 		
-		System.out.println("Enter a word");
-		words[0] = kb.next();
-		
-		System.out.println("Enter a word");
-		words[1] = kb.next();
-		
-		System.out.println("Enter a word");
-		words[2] = kb.next();
-		
-		System.out.println("Enter a word");
-		words[3] = kb.next();
-		
-		System.out.println("Entera word");
-		words[4] = kb.next();
-		
-		bb(words);
-		
+		for(int i = 0; i < words.length; i++)
+		{
+			words [i] = kb.next();
+		}
+		System.out.println();
+		System.out.println("With only the first letter...");
+		first(words);
 	}
-	
-	public static void bb(String[] array)
+	public static void first(String [] words)
 	{
-		for (String word : array)
+		for (String word : words)
 		{
 			System.out.println(word.charAt(0));
 		}
 	}
-	
 }

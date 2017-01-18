@@ -1,38 +1,29 @@
 import java.util.Scanner;
 
 public class Lesson93
-{
 
+{
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
+		System.out.println("Enter starting number.");
+		int st = kb.nextInt();
+		System.out.println("Enter sequence size.");
+		int sz = kb.nextInt();
 		
-		System.out.println("starting number: ");
-		int start = kb.nextInt();
+		int[] sequence = new int[sz];
 		
-		System.out.println("sequence size: ");
-		int size =  kb.nextInt();
-		
-		int[] a= new int[size];
-		
-		for (int i = 0; i < size; i++)
+		for(int i = 0; i < sz; i++)
 		{
-			if (i == 0 || i == 1)
+			if(i == 0 || i == 1)
 			{
-				a[i] = start;
+				sequence [i] = st;
 			}
 			else
 			{
-				a[i] = a[i-1] + a[i-2];
+				sequence[i] = sequence[i-1] + sequence[i-2];
 			}
+			System.out.print(sequence[i] + " "); 
 		}
-		
-		for (int i: a)
-		{
-			System.out.println(i);
-		}
-		
-		
 	}
 }
-	
