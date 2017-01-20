@@ -7,17 +7,17 @@ public class Lesson93
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Enter starting number.");
-		int st = kb.nextInt();
+		int a = kb.nextInt();
 		System.out.println("Enter sequence size.");
-		int sz = kb.nextInt();
+		int b = kb.nextInt();
 		
-		int[] sequence = new int[sz];
+		int[] sequence = new int[b];
 		
-		for(int i = 0; i < sz; i++)
+		for(int i = 0; i < b; i++)
 		{
 			if(i == 0 || i == 1)
 			{
-				sequence [i] = st;
+				sequence [i] = a;
 			}
 			else
 			{

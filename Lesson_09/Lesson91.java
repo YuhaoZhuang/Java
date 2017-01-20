@@ -7,7 +7,7 @@ public class Lesson91
 	{
 		Scanner kb = new Scanner(System.in);
 		String[] words = new String[5];
-		System.out.println( enter 5 words.");
+		System.out.println( "enter 5 words.");
 		
 		for(int i = 0; i < words.length; i++)
 		{

@@ -9,7 +9,7 @@ public class Lesson9
 	{
 		Scanner keyboard = new Scanner(System.in);
 		String [] words = new String[5];
-		System.out.println( enter any random five words .");
+		System.out.println( "enter any random five words .");
 		
 		for(int i = 0; i < words.length; i++)
 		{

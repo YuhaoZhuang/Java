@@ -9,7 +9,7 @@ public class Lesson92
 		{
 			numbers[i] = (int)(Math.random()*100)+1;
 		}
-		System.out.println("Numbers...");
+		System.out.println("numbers...");
 		for(int num : numbers)
 		{
 			System.out.print(" " + num + " ");

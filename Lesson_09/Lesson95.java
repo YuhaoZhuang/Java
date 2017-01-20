@@ -1,5 +1,5 @@
 
-public class Lesson96
+public class Lesson95
 {
 	public static int [] numbers;
 	
