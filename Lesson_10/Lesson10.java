@@ -1,35 +1,63 @@
+import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
-
-public class Lesson10 
+public class Lesson10
 {
 	public static void main(String[]args)
 	{
-		Integer [] numbers = {2, 6, 8, 9, 10, 12, 13, 15, 17, 24, 55, 66, 77, 78, 79};
-		ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(numbers));
+		Scanner kb = new Scanner(System.in);
+		System.out.println("Please enter an equation: ");
+		String expression = kb.nextLine();
 		
-		System.out.println("Numbers: " + nums);
-		System.out.println("Composite numbers: " + removePrimes(nums));
-	}
+		ArrayList<String> equation = new ArrayList<>(Arrays.asList(expression.split(" ")));
+		System.out.println(doEquation(equation));
 		
-	public static int gFactor(int n)
-	{
-		for(int  i = 2; i < n; i++)
-		{
-			if (n % i == 0)
-				return 1;
-		}
-		return 0;
 	}
-	public static ArrayList<Integer> removePrimes(ArrayList<Integer> nums)
+	
+	public static ArrayList<String> doEquation(ArrayList<String> equation)
 	{
-		for(int i = 0; i < nums.size(); i++)
+		int i = 0;
+		while(i < equation.size())
 		{
-			if(gFactor(nums.get(i)) == 0)
+			if (i < equation.size() && equation.get(i).equals("*") || equation.get(i).equals("/"))
 			{
-				nums.remove(i);
+				if(i < equation.size() && equation.get(i).equals("*"))
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1))));
+				}
+				else
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1))));
+				}
+				equation.remove(i-1);
+				equation.remove(i);
+			}
+			else
+			{
+				i++;
 			}
 		}
-		return nums;
+		i = 0;
+		while(i < equation.size())
+		{
+			if (i < equation.size() && equation.get(i).equals("+") || equation.get(i).equals("-"))
+			{
+				if(i < equation.size() && equation.get(i).equals("+"))
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) + Integer.parseInt(equation.get(i+1))));
+				}
+				else
+				{
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1))));
+				}
+				equation.remove(i-1);
+				equation.remove(i);
+			}
+			else
+			{
+				i++;
+			}
+		}
+		return equation;
 	}
 }

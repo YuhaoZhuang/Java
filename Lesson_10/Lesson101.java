@@ -1,58 +1,35 @@
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Lesson101 
+public class Lesson101
 {
-	public static void main (String[] args) 
+	public static void main(String[]args)
 	{
-		Scanner kb = new Scanner(System.in);
-		System.out.println("enter an equation:");
-		String Equation = kb.nextLine();
+		Integer [] numbers = {2, 6, 8, 9, 10, 12, 13, 15, 17, 24, 55, 66, 77, 78, 79};
+		ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(numbers));
 		
-		ArrayList<String> equation = new ArrayList<>(Arrays.asList(Equation.split(" ")));
-		
-		doEquation(equation);
-		System.out.println(equation.get(0));
+		System.out.println("Numbers: " + nums);
+		System.out.println("Composite numbers: " + removePrimes(nums));
 	}
-	
-	public static void doEquation (ArrayList<String> equation) 
+		
+	public static int gFactor(int n)
 	{
-		int i = 0;
-		while (i < equation.size())
+		for(int  i = 2; i < n; i++)
 		{
-			if (equation.get(i).equals("*")) 
+			if (n % i == 0)
+				return 1;
+		}
+		return 0;
+	}
+	public static ArrayList<Integer> removePrimes(ArrayList<Integer> nums)
+	{
+		for(int i = 0; i < nums.size(); i++)
+		{
+			if(gFactor(nums.get(i)) == 0)
 			{
-				equation.set(i, "" + Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1)));
-				equation.remove(i-1);
-				equation.remove(i);
-			}
-			
-			else if (equation.get(i).equals("/")) 
-			{
-				equation.set(i, "" + Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1)));
-				equation.remove(i-1);
-				equation.remove(i);
-			}
-			
-			else if (equation.get(i).equals("+")) 
-			{
-				equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) + Integer.parseInt(equation.get(i+1))));
-				equation.remove(i-1);
-				equation.remove(i);
-			}
-			
-			else if (equation.get(i).equals("-")) 
-			{
-				equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1))));
-				equation.remove(i-1);
-				equation.remove(i);
-			}
-	
-			else 
-			{
-				i++;
+				nums.remove(i);
 			}
 		}
+		return nums;
 	}
 }
