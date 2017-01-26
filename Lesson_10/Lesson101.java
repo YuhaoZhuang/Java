@@ -7,7 +7,7 @@ public class Lesson101
 	public static void main (String[] args) 
 	{
 		Scanner kb = new Scanner(System.in);
-		System.out.println("Please enter an equation:");
+		System.out.println("enter an equation:");
 		String Equation = kb.nextLine();
 		
 		ArrayList<String> equation = new ArrayList<>(Arrays.asList(Equation.split(" ")));
