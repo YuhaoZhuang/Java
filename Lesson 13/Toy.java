@@ -1,33 +1,44 @@
-public class Lesson13
+public abstract class Toy
 {
-	public String toyName;
-	public int toyCount;
+	private String name;
+	private int count;
 	
-	public ToyClass(){
-		this.toyName = "";
-		this.toyCount = 1;
-	}
-	public ToyClass(String tn, int tc){
-		this.toyName = tn;
-		this.toyCount = tc;
-	}
-	public String getName(){
-		return toyName;
-	}
-	public int getCount(){
-		return toyCount;
-	}
-	public void setName(String tn){
-		toyName = tn;
-	}
-	public void setCount(int tc){
-		toyCount = tc;
-	}
-	public abstract String getType(){
-		
-	}
-	public String toString(){
-		return "name: " + toyName + "\n" + "count: " + toyCount;
+	public Toy()
+	{
+		this.name = "";
+		this.count = 1;
 	}
 	
+	public Toy(String n)
+	{
+		this.name = n;
+		this.count = 1;
+	}
+	
+	public void setName(String n)
+	{
+		this.name = n;
+	}
+	
+	public void setCount(int c)
+	{
+		this.count += c;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getCount()
+	{
+		return count;
+	}
+	
+	public abstract String getType();
+	
+	public String toString()
+	{
+		return name + "   " + count;
+	}
 }
