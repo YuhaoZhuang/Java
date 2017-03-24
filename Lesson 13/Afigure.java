@@ -4,39 +4,12 @@ public class AFigure extends Toy
 	{
 		super();
 	}
-	
-	public AFigure(String n)
+	public AFigure(String name)
 	{
-		super(n);
+		super(name);
 	}
-	
-	public void setName(String n)
-	{
-		super.setName(n);
-	}
-	
-	public void setCount(int c)
-	{
-		super.setCount(c);
-	}
-	
-	public String getName()
-	{
-		return super.getName();
-	}
-	
-	public int getCount()
-	{
-		return super.getCount();
-	}
-	
 	public String getType()
 	{
 		return "Action Figure";
-	}
-	
-	public String toString()
-	{
-		return super.toString();
 	}
 }
