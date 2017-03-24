@@ -1,13 +1,12 @@
-public class ToyStoreRunner
+
+public class ToyRunner
 {
 	public static void main(String[]args)
 	{
-		ToyStore inventory = new ToyStore("Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF");
-		System.out.println(inventory);
+		AFigure toy = new AFigure("AF");
+		Car toy1 = new Car("tesla");
 		
-		System.out.println("The most frequent toy is ..." + inventory.getMostFrequentToy());
-		System.out.println("The most frequent type of toy is ..." + inventory.getMostFrequentType());
+		System.out.println(toy);
+		System.out.println(toy1);
 	}
 }
-
-
