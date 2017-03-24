@@ -4,12 +4,15 @@ public class Car extends Toy
 	{
 		super();
 	}
-	public Car(String name)
+	
+	public Car(String n)
 	{
-		super(name);
+		super(n);
 	}
+	
 	public String getType()
 	{
 		return "Car";
 	}
+	
 }
