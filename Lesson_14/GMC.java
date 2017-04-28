@@ -21,6 +21,7 @@ public class GMC implements Location
 	{
 		this.x = x;
 		this.y = y;
+		
 	}
 	
 	public double[] getLoc()
