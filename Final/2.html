@@ -1,0 +1,19 @@
+<!--Begin BMI Calculator -->
+<script src="http://www.bmi-rechner.net/jscripts/sendform.js"></script>
+<form action="http://www.bmi-rechner.net/en/bmi.pl" method="POST" target="Popup" name="rechner6" onsubmit="sendForm('800','800','rechner6',''); return false;"> 
+<input type="hidden" name="system" value="US">
+	<div id="rechner" style="box-shadow: 2px 2px 5px 2px #444444; padding:15px; margin:10px;width:310px;border-radius:15px; font-family:Verdana,Arial,'sans-serif';font-size:11px;background: url(http://www.bmi-rechner.net/images/box_bg_rot.png);">
+		<p style="margin-top:0;padding-top:0;text-align:center;font-size:12px;font-weight:bold">Calculate your BMI (Body Mass Index)</p>
+		<hr style="margin-bottom:10px;" color="#EFEFEF" size="1">
+		
+			<label style="width:120px; float:left; padding: 4px 0;" for="geschlecht"><b>Your Gender:</b></label> <span style="display:block; padding: 4px 0;"><select size="1" name="geschlecht"><option selected value="frau">female</option><option value="herr">male</option></select></span>
+			<label style="width:120px; float:left; padding: 4px 0;" for="gewicht"><b>Your Weight:</b></label> <span style="display:block; padding: 4px 0;"><input type="number" style="width:60px;"  pattern="[0-9]{1,3}" min="10" max="400" step="1" value="" name="gewicht" size="7" title="Please insert your rounded weight!" required> pounds</span>
+			<label style="width:120px; float:left; padding: 4px 0;" for="groesse"><b>Your Height:</b></label> <span style="display:block; padding: 4px 0;"><input type="number" style="width:60px;"  pattern="[0-9]{1,3}" min="0" max="200" step="1" value="" name="feet" size="3"> feet    <input type="number" style="width:60px;"  pattern="[0-9]{1,3}" min="0" max="400" step="1" value="" name="inch" size="3"> inch</span>
+			<label style="width:120px; float:left; padding: 4px 0;" for="alter"><b>Your Age:</b></label> <span style="display:block; padding: 4px 0;"><input type="number" style="width:60px;"  pattern="[0-9]{1,3}" min="19" max="200" step="1" value="" name="alter" size="7"  required> years</span>
+						
+			<p style="text-align:center;"><input style="font-size:10px;" type="submit" value="Calculate BMI"></p>
+			<p style="font-size:9px;text-align:center;margin-bottom:0;"><a href="http://www.bmi-rechner.net/en/" target="_blank">(c) www.BMI-Rechner.net/en/</a></p>
+			
+	</div>
+</form>
+<!--End of BMI Calculator -->
