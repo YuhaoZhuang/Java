@@ -3,6 +3,8 @@
 		<title>BMI Calculator</title>
 		
 	</head>
+	
+	
 	<script language = "JavaScript">
 	<!--
 	var a = ""
@@ -10,15 +12,14 @@
 	a = prompt("please enter password")
 	if (a!=b){
 	alert ("Inocrrect Password")
-	history.back()
-	
-	
+	self.close()
 	
 	}else {
 	alert("correct password")
 	windows.locaion.href="Final.html"}
 	//-->
 	</script>
+	
 	
 	
 	<script language="JavaScript">
@@ -45,19 +46,10 @@ alert("Please Fill in everything correctly")
 }
 //-->
 </script>
-<script type="text/javascript" language="javascript">
-function changefield(){
-    document.getElementById("passwordbox").innerHTML = "<input id=\"passwordfield\" type=\"password\" name=\"password-field\" title=\"Password\" tabindex=\"2\" />";
-    document.getElementById("password-field".focus();
-}
-</script>
+
 </head>
 
 <body>
-<div id="passwordbox">
-<input id="password-field" type="text" name="password-field" title="Password"onfocus="changefield();" value="Password" tabindex="2" />
-</div>
-<input type="submit" name="submit" value="sign in" tabindex="3" />
 
 </body>
 
@@ -75,14 +67,20 @@ function changefield(){
 				padding-top: 10px;
 				padding-boome:10px;
 				
+				
 			}
-			h3{ tex-align: center;}
+			h3{
+			color:black;
+			}
 			body{
 			  background-color: yellow;
 			  color:white;
 			  background-image:url(w.jpg);
-			  background-repeat:no-repeat;
+			  
 			  background-position: 50% 110px; 
+			  padding: 20px;
+			  border: 20px yellow;
+			  
 			}
 			h4{
 				background-color:red;
@@ -106,18 +104,43 @@ function changefield(){
 			 a:active{
 			background-color:orange;
 			}
-			table{
-			border: 3px solid blue;
-			}
+		
+			table:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 100%;
+    right: 100%;
+    background: #6ccbe2;
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: lenear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes border {
+    from {
+        top: -1px;
+        top: -1px;
+    }
+    to {
+        bottom: -1px;
+        right: -1px;
+    }
+}
 			tr{
-			 background-color: yellow;
+			 background-color: green;
 			}
 			td{
-			border: 2px dashed red;
+			border: 2px dashed blue;
 			}
+			
 			ul {
 			list-style-type:square;	
-			list-style-image:url(download.jpg);
+			
 			border: 1px solid red;
 			background-color: black;
 			padding: 20px;
@@ -130,6 +153,9 @@ function changefield(){
 				border:2px solid red;
 				position: absolute;
 				width:200px;
+			}
+				table{
+			border: 3px solid blue;
 			}
 		
 			</style>
@@ -145,23 +171,17 @@ function changefield(){
 The BMI may also be determined using a table[note 2] or chart which displays BMI as a function of mass and height using contour lines or colours for different BMI categories, and which may use other units of measurement (converted to metric units for the calculation).[note 3]
 
 The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value. However, there is some debate about where on the BMI scale the dividing lines between categories should be placed.[2] Commonly accepted BMI ranges are underweight: under 18.5 kg/m2, normal weight: 18.5 to 25, overweight: 25 to 30, obese: over 30. People of Asian descent have different associations between BMI, percentage of body fat, and health risks than those of European descent, with a higher risk of type 2 diabetes and cardiovascular disease at BMIs lower than the WHO cut-off point for overweight, 25 kg/m2, although the cutoff for observed risk varies among different Asian populations.
-<p>
-Muscles – body builders and people who have a lot of muscle bulk will have a high BMI, but are not overweight.
-Physical disabilities – people who have a physical disability and are unable to walk may have muscle wasting. Their BMI may be slightly lower, but this does not necessarily mean they are underweight. In these instances, it is important to consult a dietitian who will provide helpful advice.
-Height – BMI is not totally independent of height and it tends to overestimate obesity among shorter people and underestimate it among taller people. Therefore, BMI should not be used as a guide for adults who are very short (less than 150 cm) or very tall (more than 190 cm).
-People of different ethnic groups – Asians and Indians, for example, have more body fat at any given BMI compared to people of European descent. Therefore, the cut-offs for overweight and obesity may need to be lower for these populations. This is because an increased risk of diabetes and cardiovascular disease begins at a BMI as low as 23 in Asian populations. Some populations have equivalent risks at a higher BMI, such as people of Torres Strait Islander and Maori origin.
-</p>
+
 
 <p>
 For people who are considered obese (BMI greater than or equal to 30) or those who are overweight (BMI of 25 to 29.9) and have two or more risk factors, it is recommended that you lose weight. Even a small weight loss (between 5 and 10 percent of your current weight) will help lower your risk of developing diseases associated with obesity. People who are overweight, do not have a high waist measurement, and have fewer than two risk factors may need to prevent further weight gain rather than lose weight.
 Talk to your doctor to see whether you are at an increased risk and whether you should lose weight. Your doctor will evaluate your BMI, waist measurement, and other risk factors for heart disease.
 The good news is even a small weight loss (between 5 and 10 percent of your current weight) will help lower your risk of developing those diseases.
 </p> 
-
 <p>
-Cardiac muscle (heart muscle) is an involuntary, striated muscle that is found in the walls and histological foundation of the heart, specifically the myocardium. Cardiac muscle is one of three major types of muscle, the others being skeletal and smooth muscle. These three types of muscle all form in the process of myogenesis. The cells that constitute cardiac muscle, called cardiomyocytes or myocardiocytes, predominantly contain only one nucleus, although populations with two to four nuclei do exist.[1][2][page needed] The myocardium is the muscle tissue of the heart, and forms a thick middle layer between the outer epicardium layer and the inner endocardium layer.
-</p>
-
+BMI is a person's weight in kilograms divided by the square of height in meters. BMI does not measure body fat directly, but research has shown that BMI is moderately correlated with more direct measures of body fat obtained from skinfold thickness measurements, bioelectrical impedance, densitometry (underwater weighing), dual energy x-ray absorptiometry (DXA) and other methods 1,2,3. Furthermore, BMI appears to be as strongly correlated with various metabolic and disease outcome as are these more direct measures of body fatness 4,5,6,7,8,9. In general, BMI is an inexpensive and easy-to-perform method of screening for weight category, for example underweight, normal or healthy weight, overweight, and obesity.
+<p>
+</br>
 <h2> Weight and our health </h2>
 <p>
 If you’re carrying many extra pounds, you face a higher-than-average risk of a whopping 50 different health problems. These health conditions include the nation’s leading causes of death—heart disease, stroke, diabetes, and certain cancers—as well as less common ailments such as gout and gallstones. Perhaps even more compelling is the strong link between excess weight and depression, because this common mood disorder can have a profound, negative impact on your daily life.
@@ -186,6 +206,43 @@ People who feel depressed often feel too blue to eat properly and exercise regul
 Some medications used to treat depression cause weight gain.
 <p>
 
+<h3> BMI Table </h3>
+<table style="width:100%">
+  <tr>
+    <th>BMI Range </th>
+    <th>Verdict</th> 
+
+  </tr>
+  <tr>
+    <td>Below 18.5</td>
+    <td>Underweight</td> 
+   
+  </tr>
+  <tr>
+    <td>18.5-24.9</td>
+    <td>Healthy Weight</td> 
+    
+  </tr>
+    <tr>
+    <td>25-29.9</td>
+    <td>Over Weight</td> 
+    
+  </tr>
+    </tr>
+    <tr>
+    <td>30-39.9</td>
+    <td>Obese</td> 
+    
+  </tr>
+    </tr>
+    </tr>
+    <tr>
+    <td>Over 40</td>
+    <td>Morbidly Obese</td> 
+    
+  </tr>
+</table>
+
 
 
 <img src = "Hands.png" height = "300" width ="350"/> 
@@ -206,6 +263,7 @@ Your BMI: <input type="text" name="bmi" size="10"><br/>
 This Means: <input type ="text" name="meaning" size="25"><br/>
 <input type="reset" value="Reset" />
 </form>
+	
 	
 		
 		
