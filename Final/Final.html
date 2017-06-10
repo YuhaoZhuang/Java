@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>BMI Calculator</title>
+		<title>BMI and calories Calculator</title>
 		
 	</head>
 	
@@ -690,10 +690,9 @@ alert("Please Fill in everything correctly")
 		
 			</style>
 		<body>
-		<h1>  Best website </h1>
+		<h1>  Best health website </h1>
 		<hr/>
-		<h1> We care about your health</h1>
-		
+<h1> BMI </h1>			
 
 		<h2> Please carefully <strong> read</strong> the information below</h2>
 		<p>The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.
@@ -737,9 +736,9 @@ Some medications used to treat depression cause weight gain.
 <p>
 
 <h3> BMI Table </h3>
-<table style="width:100%">
+<table style="width:100%" border="2" >
   <tr>
-    <th>BMI Range </th>
+    <th >BMI Range </th>
     <th>Verdict</th> 
 
   </tr>
@@ -794,6 +793,31 @@ This Means: <input type ="text" name="meaning" size="25"><br/>
 <input type="reset" value="Reset" />
 </form>
 	
+	
+<h1>Calories </h1>	
+<p>Calories are units of energy. Various definitions exist but fall into two broad categories.The small calorie or gram calorie (symbol: cal) is the approximate amount of energy needed to raise the temperature of one gram of water by one degree Celsius at a pressure of one atmosphere.[1]
+The large calorie or kilogram calorie (symbol: Cal), also known as the food calorie and similar names,[2] is defined in terms of the kilogram rather than the gram. It is equal to 1000 small calories or 1 kilocalorie (symbol: kcal).<p>
+<p>You can find out how many calories are in a food by looking at the nutrition facts label. The label also will describe the components of the food — how many grams of carbohydrate, protein, and fat it contains.
+
+Here's how many calories are in 1 gram of each:
+
+carbohydrate — 4 calories
+protein — 4 calories
+fat — 9 calories
+That means if you know how many grams of each one are in a food, you can calculate the total calories. You would multiply the number of grams by the number of calories in a gram of that food component. For example, if a serving of potato chips (about 20 chips) has 10 grams of fat, 90 calories are from fat. That's 10 grams x 9 calories per gram.</p>
+
+<p> t is widely known that those who are overweight often eat many more calories than those who are at their ideal weight. Calories do have a direct bearing on health and the rate that you burn calories also determines your healthy weight levels.
+
+
+It is difficult to set bottom line calories levels for health since everyone has a different body composition and their metabolism and activity levels are very different. However there are some baselines that suggest 1200 calories per day for women and 1800 calories per day for men. Remember these are only a starting point.  Our metabolic rate calculator can give you more specific guidelines.
+
+When your caloric intake is too low you will have several health problems. One problem is reduced muscles mass. Your body searches for sources of energy to just keep vital organs functioning and it will turn to your muscle mass for those energy foods. This is called catabolism. Your metabolic rate will drop dramatically if you eat too little calories and after three days of low calorie intake this will compound your muscle mass loss. When you don”t eat enough calories you become sluggish, develop nutritional deficiencies, and are often highly irritable. If you are lowering your caloric intake for weight reduction, you are actually setting yourself for high weight gain when you do being to eat properly again.
+
+
+
+</p>
+
+<h2> Calories Calculator</h2>
 <div class='resp_code align='center''>
 <table id ='tab' align='center' cellspacing='0' cellpadding='0' style="width:100%;">
 <tr><td align=center><br><b>Calorie Calculator</b><br><br><form name="frm" action="" class='frms noborders'><table><tr><td style="color: #3D366F; font-size:13px;">Age:</td><td><input type="text" name="age" id="age" align="left" size="3" maxlength="2" onkeypress="return cknum(event,age)"></td><td><font color="#3D366F" size="2">years</font></td></tr><tr><td style="color: #3D366F; font-size:13px;">Gender:</td><td><input type="radio" name="gen" id="gen" checked><font color="#3D366F" size="0.7">Male</font><input type="radio" name="gen" id="gen"><font color="#3D366F" size="0.7">Female</font></td></tr><tr><td style="color: #3D366F; font-size:13px;">Height:</td><td><select style='width:50%;' name="foot" id="foot" onchange="hcon()"><option value="1">1'</option><option value="2">2'</option><option value="3">3'</option><option value="4">4'</option><option value="5">5'</option><option value="6">6'</option><option value="7">7'</option></select><select style='width:40%;'name="inch" id="inch" onchange="hcon()"><option value="1">1"</option><option value="2">2"</option><option value="3">3"</option><option value="4">4"</option><option value="5">5"</option><option value="6">6"</option><option value="7">7"</option><option value="8">8"</option><option value="9">9"</option><option value="10">10"</option><option value="11">11"</option></select></td></tr><tr><td style="color: #3D366F; font-size:13px;">Cms :</td><td><input type="text" name="cen" id="cen" size="4" onkeyup="con(cen)"></td></tr><tr><td style="color: #3D366F; font-size:13px;">Weight:</td><td><input type="text" name="weight" id="weight" maxlength="3" size="3" onkeyup="isNumberKey(this.id)"></td><td><select name="wtype" id="wtype"><option value="kg">Kg</option><option value="pounds">Pounds</option></select></td></tr><tr><td style="color: #3D366F; font-size:13px;">Activeness:</td><td><select style='width:100px;' name="loa" id="loa"><option value="1">Sedentary</option><option value="2">Light Active</option><option value="3">Moderately Active</option><option value="4">Very Active</option><option value="5">Extra Active</option></select></td></tr><tr><td colspan='2' align="center"><input class='blue_button' type="button" value="Calculate The Calorie" onclick="cc()"><span id="dumdiv" align="center" style=" font-size: 10px;color: #dadada;"><a id="dum" style="padding-right:0px; text-decoration:none;color: green;text-align:center;"></a></span></td></tr></table></form>
